@@ -36,11 +36,13 @@ public class MyFirstJavaProgram {
          * Example
          */
         text = "I Love Java and Java loves me.";
+        System.out.println("Index of");
         System.out.println(text.indexOf("J"));
         System.out.println(text.indexOf("love"));
         System.out.println(text.indexOf("ove"));
         // String concatenation
         // Use the plus symbol (+) for string concatenation
+        System.out.println("concatination");
 
         System.out.println(text2 + text3);// --------- "Hell0Java"
         System.out.println(text2 + " " + text3);// --------- "Hello Java"
@@ -59,26 +61,26 @@ public class MyFirstJavaProgram {
         // conditional statement
         int x = 10;
         if (x < 20) {
-            System.out.print("This is if statement");
+            System.out.println("This is if statement");
         }
 
         // if else statement
         int y = 30;
         if (y < 20) {
-            System.out.print("This is if statement");
+            System.out.println("This is if statement");
         } else {
-            System.out.print("This is else statement");
+            System.out.println("This is else statement");
         }
 
         // this is if, else if, and else statement
         if (y == 10) {
-            System.out.print("Value of X is 10");
+            System.out.println("Value of X is 10");
         } else if (y == 20) {
-            System.out.print("Value of X is 20");
+            System.out.println("Value of X is 20");
         } else if (y == 30) {
-            System.out.print("Value of X is 30");
+            System.out.println("Value of X is 30");
         } else {
-            System.out.print("This is else statement");
+            System.out.println("This is else statement");
         }
 
         // switch statement
@@ -139,11 +141,15 @@ public class MyFirstJavaProgram {
 
        //Math-Class
         //The java.lang.Math class contains methods for performing basic numeric operations such as exponential, logarithm, square root, and trigonometric functions
-        System.out.println("ceil round to upper "+Math.ceil(x)); //Math.ceil(3.2) and Math.ceil(3.9) both return 4.0
-        System.out.println("floor round to lower "+Math.floor(x)); // Math.floor(3.2) and Math.floor(3.9) both return 3.0
-        System.out.println("power nth "+Math.pow(x,y)); //Math.pow(4,2) returns 16.0
+        float p = (float) 3.2;
+        float q = (float) 3.9;
+        int o =2;
+        int v = 5;
+        System.out.println("ceil round to upper "+Math.ceil(p)); //Math.ceil(3.2) and Math.ceil(3.9) both return 4.0
+        System.out.println("floor round to lower "+Math.floor(q)); // Math.floor(3.2) and Math.floor(3.9) both return 3.0
+        System.out.println("power nth "+Math.pow(o,v)); //Math.pow(4,2) returns 16.0
         System.out.println("round to closest "+Math.round(x)); //Math.round(3.2) returns 3; Math.round(3.6) returns 4
-        System.out.println("maximum "+Math.max(x,y)); // Math.max(1, 2) returns 2
+        System.out.println("maximum "+Math.max(o,v)); // Math.max(1, 2) returns 2
         System.out.println("square of a number "+Math.sqrt(x)); // Math.sqrt(4) returns 2.0
         System.out.println("generate the round number "+Math.random());// a random floating point number between 0 and 1. generates a double value in the range [0,1)
         //Eg: Math.random()*100
