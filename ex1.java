@@ -18,7 +18,7 @@ public class ex1 {
             number1 = input.nextInt();
             System.out.println("Enter second number: ");
             number2 = input.nextInt();
-            int start_from=number2;
+            int start_from=number1;
             int end_with=number2, total_num=0;
             if (number1 < number2) {
                  start_from=number1;
@@ -33,8 +33,13 @@ public class ex1 {
             } 
             System.out.println(total_num +" number between "+number1+" and "+number2+": ");
             for(int i = start_from;i<=end_with;i++){
+                if (i!=end_with) {
+                    System.out.print(i+", ");
+                }
+                else 
+                  System.out.print(i+"\n");
 
-                System.out.println(i+", ");
+                
             }
             // 3.Write a program that reads an integer value and prints the sum of all even integers 
             // between 2 and the input value, inclusive. Print an error message if the input value is less than 2.
